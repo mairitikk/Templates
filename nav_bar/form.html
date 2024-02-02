@@ -3,21 +3,66 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <link rel="stylesheet" href="../css/form.css" />
-    <title>Progress Steps</title>
+
+    <title>Form</title>
   </head>
   <body>
     <div class="container">
-      <div class="progress-container">
-        <div class="progress" id="progress"></div>
-        <div class="circle active">1</div>
-        <div class="circle">2</div>
-        <div class="circle">3</div>
-        <div class="circle">4</div>
+      <div class="circle-container">
+        <div class="circle">
+          <button id="close">
+            <i class="fas fa-times"></i>
+          </button>
+          <button id="open">
+            <i class="fas fa-bars"></i>
+          </button>
+        </div>
       </div>
-      <button class="btn" id="prev" disabled>Prev</button>
-      <button class="btn" id="next">Next</button>
+      <div class="content">
+        <h1>Mis plaanis</h1>
+        <small>Mairi Tikk</small>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore
+          provident dolore cupiditate cum atque nihil nisi autem. Qui
+          exercitationem, iusto labore ipsa saepe vel non beatae officiis rem.
+          Non laboriosam quibusdam, eos magni tempore cumque sed, iure fugit
+          reiciendis sunt quos, asperiores ducimus odit in. Inventore saepe,
+          molestias maiores, sequi enim nemo quibusdam animi voluptatem
+          excepturi repellendus amet repellat quasi doloribus totam deleniti
+          quidem rem consectetur harum sapiente natus ipsa reprehenderit.
+          Provident sit adipisci neque ipsam deserunt nulla esse tempora optio.
+          Voluptas quibusdam molestias totam rem quos, sit iusto, nesciunt nemo
+          saepe et qui quam magnam quod ratione repudiandae similique.
+        </p>
+        <div>
+          <div class="progress-container">
+            <div class="progress" id="progress"></div>
+            <div class="circle1 active">1</div>
+            <div class="circle1">2</div>
+            <div class="circle1">3</div>
+            <div class="circle1">4</div>
+          </div>
+          <button class="btn" id="prev" disabled>Prev</button>
+          <button class="btn" id="next">Next</button>
+        </div>
+      </div>
     </div>
+    <nav>
+      <ul>
+        <li><i class="fas fa-home"></i>Kodu</li>
+        <li><i class="fas fa-user-alt"></i>Meist</li>
+        <li><i class="fas fa-envelope"></i>Kontakt</li>
+      </ul>
+    </nav>
+
     <script src="../js/progress_bar.js"></script>
   </body>
 </html>

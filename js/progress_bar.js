@@ -1,7 +1,18 @@
+//rotating nav bar
+const open = document.getElementById('open');
+const close = document.getElementById('close');
+const container = document.querySelector('.container');
+
+open.addEventListener('click', () => container.classList.add('show-nav'));
+close.addEventListener('click', () => container.classList.remove('show-nav'));
+
+//progress bar
+
+
 const progress = document.getElementById('progress');
 const prev = document.getElementById('prev');
 const next = document.getElementById('next');
-const circles = document.querySelectorAll('.circle');
+const circles = document.querySelectorAll('.circle1');
 
 let currentActive = 1;
 
@@ -22,12 +33,12 @@ prev.addEventListener('click', () => {
     update()
 })
 function update() {
-    circles.forEach((circle, idx) => {
+    circles.forEach((circle1, idx) => {
         if (idx < currentActive) {
-            circle.classList.add('active')
+            circle1.classList.add('active')
         }
         else {
-            circle.classList.remove('active')
+            circle1.classList.remove('active')
         }
     })
 
