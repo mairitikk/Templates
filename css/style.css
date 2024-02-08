@@ -5,6 +5,7 @@
 body{
     font-family: 'Roboto', sans-serif;
     margin: 0;
+    
 
 }
 .header {
@@ -24,6 +25,7 @@ body{
     border-radius: 4px;
     display: inline;
 }
+
 
 .header a.logo {
     font-size: 25px;
@@ -146,4 +148,29 @@ body{
     .panel:nth-last-of-type(4), .panel:nth-last-of-type(5){
         display: none;
     }
+}
+/*blurry loading bage*/
+.blurry-loading-container{
+ 
+ display: flex;
+ align-items: center;
+ justify-content: center;
+ height: 100%;
+ overflow: hidden;
+ margin: 0;
+}
+.bg {
+    background: url('../images/meri.png') no-repeat center center/cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    filter: blur(0px);
+}
+
+.loading-text {
+    font-size: 50px;
+    color: black;
 }

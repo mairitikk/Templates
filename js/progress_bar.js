@@ -1,10 +1,3 @@
-//rotating nav bar
-const open = document.getElementById('open');
-const close = document.getElementById('close');
-const container = document.querySelector('.container');
-
-open.addEventListener('click', () => container.classList.add('show-nav'));
-close.addEventListener('click', () => container.classList.remove('show-nav'));
 
 //progress bar
 
@@ -44,6 +37,8 @@ function update() {
 
     const actives = document.querySelectorAll('.active')
 
+    console.log("estoy aqui")
+
     progress.style.width = (actives.length - 1) / (circles.length - 1) * 100 + '%'
     if (currentActive === 1) {
         prev.disabled = true
@@ -54,3 +49,6 @@ function update() {
         next.disabled = false
     }
 }
+
+
+
