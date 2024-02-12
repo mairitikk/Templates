@@ -8,10 +8,17 @@ body{
     
 
 }
+
+.main-container{
+    display: flex;
+    flex-direction: column;
+}
 .header {
     overflow: hidden;
     background-color: rgb(133, 208, 221);
     padding: 20px 10px;
+    position: relative;
+   
 }
 
 .header a {
@@ -108,10 +115,7 @@ body{
         float: none;
     }
 }
-.container{
-    display: flex;
-    width: 90vw;
-}
+
 .panel{
     background-size: cover;
     background-position: center;
@@ -151,7 +155,7 @@ body{
 }
 /*blurry loading bage*/
 .blurry-loading-container{
- 
+
  display: flex;
  flex-direction: column;
  align-items: center;
@@ -164,7 +168,7 @@ body{
     top: 0;
     left: 0;
     width: 100%;
-    height: 70%;
+    height: 100%;
     z-index: -1;
     filter: blur(0px);
 }
@@ -175,23 +179,33 @@ body{
 }
 
 /* time counter*/
-.counter{
-    display: flex;
-    flex-direction: column;
 
+.countdown-container {
+    display: flex; 
     justify-content: center;
     align-items: center;
     font-size: 12px;
     background: rgb(133, 208, 221);
-}
-.countdown-container {
-    display: flex;
-    
+    height: 300px;
     width: 100%;
-    max-width: 70%;
+    max-width: 100%;
     justify-content: space-between;
+    position: absolute;
+    top: 100%;
 }
+.countdown-header{
+    font-size: 30px;
+}
+.countdown-header-container{
+    display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        position: absolute;
+        top: 5%;
+        left: 45%;
 
+}
 .days-container,
 .hours-container,
 .minutes-container,

@@ -14,50 +14,56 @@
     <title>Menu</title>
   </head>
   <body>
-    <div id="nav-placeholder">
-      <div class="header">
-        <a href="#default" class="logo">Mairi ja Cesari pulmad</a>
-        <div class="header-right">
-          <div class="search">
-            <input class="input" type="text" placeholder="search...." />
-            <button class="btn">
-              <i class="fas fa-search"></i>
-            </button>
-          </div>
+    <div class="main-container">
+      <div id="nav-placeholder">
+        <div class="header">
+          <a href="#default" class="logo">Mairi ja Cesari pulmad</a>
+          <div class="header-right">
+            <div class="search">
+              <input class="input" type="text" placeholder="search...." />
+              <button class="btn">
+                <i class="fas fa-search"></i>
+              </button>
+            </div>
 
-          <a class="active" href="#home">Esileht</a>
-          <a href="nav_bar/kus.html">Toimumiskoht</a>
-          <a href="nav_bar/form.html">Registreerimine</a>
-          <a href="#about">Kontakt</a>
+            <a class="active" href="#home">Esileht</a>
+            <a href="nav_bar/kus.html">Toimumiskoht</a>
+            <a href="nav_bar/form.html">Registreerimine</a>
+            <a href="#about">Kontakt</a>
+          </div>
         </div>
       </div>
-    </div>
-    <div class="blurry-loading-container">
-      <section class="bg"></section>
-      <div class="loading-text">0%</div>
-    </div>
-    <div class="counter">
-      <section class="countdown-container">
-        <div class="days-container">
-          <div class="days"></div>
-          <div class="days-label">päeva</div>
-        </div>
+      <div class="blurry-loading-container">
+        <section class="bg"></section>
+        <div class="loading-text">0%</div>
+      </div>
+      <div class="">
+        <section class="countdown-container">
+          <div class="countdown-header-container">
+            <h3 class="countdown-header">Pulmadeni aega</h3>
+          </div>
 
-        <div class="hours-container">
-          <div class="hours"></div>
-          <div class="hours-label">tundi</div>
-        </div>
+          <div class="days-container">
+            <div class="days"></div>
+            <div class="days-label">päeva</div>
+          </div>
 
-        <div class="minutes-container">
-          <div class="minutes"></div>
-          <div class="minutes-label">minutit</div>
-        </div>
+          <div class="hours-container">
+            <div class="hours"></div>
+            <div class="hours-label">tundi</div>
+          </div>
 
-        <div class="seconds-container">
-          <div class="seconds"></div>
-          <div class="seconds-label">sekundit</div>
-        </div>
-      </section>
+          <div class="minutes-container">
+            <div class="minutes"></div>
+            <div class="minutes-label">minutit</div>
+          </div>
+
+          <div class="seconds-container">
+            <div class="seconds"></div>
+            <div class="seconds-label">sekundit</div>
+          </div>
+        </section>
+      </div>
     </div>
     <script src="../js/script.js"></script>
   </body>
