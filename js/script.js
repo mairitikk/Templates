@@ -8,20 +8,7 @@ fetch('nav.html')
         oldelem.parentNode.replaceChild(newelem, oldelem);
     })
 
-//kus? piltide paneel
-const panels = document.querySelectorAll('.panel')
-panels.forEach((panel) => {
-    panel.addEventListener('click', () => {
-        removeActiveClasses()
-        panel.classList.add('active')
-    })
-})
-function removeActiveClasses() {
-    panels.forEach((panel) => {
-        panel.classList.remove('active')
 
-    })
-}
 // otsimis nupu js
 const search = document.querySelector('.search')
 const btn = document.querySelector('.btn')
