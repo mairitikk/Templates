@@ -60,8 +60,8 @@ body::-webkit-scrollbar-track{
 }
 
 .header a.active {
-    background-color: dodgerblue;
-    color: white;
+    background-color: #efeff0;
+    color: black;
 }
 
 .header-right {
@@ -517,4 +517,17 @@ body::-webkit-scrollbar-track{
 
 .button:not(:last-child) {
     margin-bottom: 64px;
+}
+.maagia-container{
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    width: 100%;
+    position: absolute;
+    top:170%
+}
+.maagia-img{
+    width: 20px;
+    height: 10px;
+    object-fit: cover;
 }
