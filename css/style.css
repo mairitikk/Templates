@@ -8,12 +8,26 @@ body{
     
 
 }
+body::-webkit-scrollbar{
+    width: 20px;
+}
+body::-webkit-scrollbar-thumb{
+    background: linear-gradient(#efeff0, #afafaf);
+    border-radius: 10px;
+}
+body::-webkit-scrollbar-track{
+    background: rgb(133, 208, 221);
+}
 
 .main-container{
     display: flex;
     flex-direction: column;
 }
 /*navbar*/
+
+.logo{
+    font-style: italic;
+}
 .header {
     overflow: hidden;
     background-color: rgb(133, 208, 221);
@@ -130,7 +144,6 @@ body{
     background: rgb(133, 208, 221);
     height: 700px;
     width: 100%;
-    max-width: 100%;
     justify-content: space-between;
     padding: 0px 100px 0px 100px;
     position: absolute;
@@ -200,6 +213,8 @@ body{
         height: 100px;
     }
 }
+
+
 /*alumised nupud*/
 .type--A {
     --line_color: #555555;
@@ -495,7 +510,7 @@ body{
     justify-content: space-between;
     align-items: center;
     position: absolute;
-    top: 140%;
+    top: 160%;
     padding: 20px;
 
 }
