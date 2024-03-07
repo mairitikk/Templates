@@ -25,7 +25,7 @@ body::-webkit-scrollbar-track{
 .navbar{
    display: flex;
     
- 
+ background-color: rgb(183, 231, 240);;
     padding: 20px 10px;
     align-items: center;
     flex-wrap: wrap;
@@ -88,7 +88,7 @@ body::-webkit-scrollbar-track{
 
 .search {
     display: flex;
-   
+   border-radius: 4px;
     position: relative;
     height: 50px;
    margin-left: auto;
@@ -102,6 +102,7 @@ body::-webkit-scrollbar-track{
     padding: 15px;
     height: 50px;
     width: 50px;
+    border-radius: 4px;
     transition: width 0.3s ease;
 }
 
@@ -115,6 +116,7 @@ body::-webkit-scrollbar-track{
     right: 0;
     height: 50px;
     width: 50px;
+    border-radius: 4px;
     transition: transform 0.3s ease;
 }
 
@@ -140,13 +142,60 @@ body::-webkit-scrollbar-track{
 }
 .nav-hamburger{
     
-} 
+    display: block;
+    align-items: center;
+    position: absolute;
+    right: 5px;
+    top: 20px;
+    cursor: pointer;
+    width: 50px;
+    height: 40px;
+    z-index: 100;
+    color: #fff;
+
+}
+
+.fas.fa-bars.fa-2x{
+    color: #1b1919;
+}
+
+.header-link-a{
+ color: white;
+ padding: 14px 16px;
+ text-decoration: none;
+ font-size: 17px;
+ display: block;
+ position: relative;
+ top: 30px;
+ right: 10px;
+}
+#myLinks{
+display: none;
+}
+
+.logo{
+    position: relative;
+    top: 10px;
+}
 }
 /*main cpntainer photo*/
 .maind-photo{
     object-fit: cover;
     height: 100%;
     width: 100%;
+    object-position: 50% 50%;
+    border-radius: 30px;
+    
+}
+.photo-section{
+    display: flex;
+   justify-content: center;
+    position: relative;
+    top: 20px;
+    height: 70vh;
+    width: 98vw;
+    position: relative;
+    
 }
 
 /* time counter*/
@@ -163,7 +212,8 @@ body::-webkit-scrollbar-track{
     justify-content: space-between;
     padding: 0px 100px 0px 100px;
     position: absolute;
-    top: 100%;
+    top: 85%;
+    
 }
 .countdown-header{
     font-size: 20px;
@@ -229,7 +279,36 @@ body::-webkit-scrollbar-track{
         height: 100px;
     }
 }
+@media (max-width: 1000){
+.photo-section{
+    display: flex;
+    justify-content: flex-start;
+    position: relative;
+    top: 18px;
+    height: 300px;
+    width: 1200px;
+   
+} 
+.maind-photo {
+            object-fit: cover;
+            max-height: 100%;
+            max-width: 100%;
+            object-position: 50% 50%;
+           
+    
+        }
 
+.countdown-container{
+    top: 180%;
+
+   
+    
+        
+   
+
+}
+
+}
 
 /*alumised nupud*/
 .button-container {
@@ -535,12 +614,12 @@ body::-webkit-scrollbar-track{
     margin-bottom: 64px;
 }
 
-.maagia-container{
+.maagia-container-header{
    
     width: 100%;
     height: 900px;
     position: absolute;
-    top:250%;
+    top:125%;
     display: flex;
     flex-direction: row;
 }
