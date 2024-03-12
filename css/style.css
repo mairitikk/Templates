@@ -212,7 +212,7 @@ display: none;
     justify-content: space-between;
     padding: 0px 100px 0px 100px;
     position: absolute;
-    top: 85%;
+    top: 95%;
     
 }
 .countdown-header{
@@ -614,19 +614,45 @@ display: none;
     margin-bottom: 64px;
 }
 
-.maagia-container-header{
+
+
+.maagia-container{
    
     width: 100%;
-    height: 900px;
+    height: 500px;
     position: absolute;
-    top:125%;
+    top:170%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.maagia-container-header-name{
+    font-size: 2em;
+    text-align: center;
+    margin-bottom: 20px;
+}
+.image-container{
     display: flex;
     flex-direction: row;
+   
 }
+
 .mustkuntsnikud{
     
-    width: 200px;
-    height: 900px;
+    width: 400px;
+    height: 600px;
     object-fit: contain;
-    flex: 1;
+    
+}
+
+@media only screen and (max-width: 1200px) {
+    .image-container {
+        flex-direction: column
+    }
+    .maagia-container{
+        top: 200%;
+    }
 }
