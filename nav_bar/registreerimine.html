@@ -26,37 +26,40 @@
           </button>
         </div>
       </div>
+
+
       <div class="content">
         
         <header><h1 class="form-header">Anna teada tulekust</h1></header>
           <div class="form-container">
             
-                <form id="form1">
+                <form id="form1" action="/action_page.php">
                
-                    <input type="text" placeholder="Nimi"/>
-                    <div class="btn-box">
-                      <button id="next1" type="button">Edasi</button>
-                    </div>
+                 <input type="text" placeholder="Nimi"/>
+                        <div class="btn-box">
+                          <button id="next1" type="button">Edasi</button>
+                        </div>
                 </form>
 
-                <form id="form2">
+                <form id="form2" action="/action_page.php">
                   <input type="email" placeholder="Email" />
                   <input type="text" placeholder="Telefoni number">
                       <div class="btn_box">
                         <button id="back1" type="button">Tagsi</button>
                         <button id="next2" type="button">Edasi</button>
                       </div>
-                <form id="form3">
+                </form>
+                <form id="form3" action="/action_page.php">
         
-                  <input type="text" placeholder="Kellega tuled" />
-                  <textarea placeholder="Küsimused?"></textarea>
+                  <input type="text" placeholder="Kellega tuled?" />
+                  <input placeholder="Küsimused?">
         
                       <div class="btn_box">
                         <button id="back2" type="button">Tagasi</button>
-                        <button id="Submit" type="button">Registreeri</button>
+                        <input id="Submit" type="submit" value="Registreeri">
                       </div>
                 </form>
-
+<div class="all-container">
           <div class="progress_container">
             <div class="progress" id="progress"></div>
             <div class="circle1 active">1</div>
@@ -64,7 +67,7 @@
             <div class="circle1">3</div>
             
           </div>
-        
+        </div>
         </div>
       </div>
     </div>

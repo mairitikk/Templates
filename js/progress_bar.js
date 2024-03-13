@@ -140,7 +140,7 @@ const circles = document.querySelectorAll(".circle1");
 let currectActive = 1;
 //============== Next Form===============
 function nextOne() {
-    form1.style.left = "-450px";
+    form1.style.left = "-1500px";
     form2.style.left = "25px";
     //next slide
     increamentNumber();
@@ -150,7 +150,7 @@ function nextOne() {
 //=============== Back One==================
 function backOne() {
     form1.style.left = "25px";
-    form2.style.left = "450px";
+    form2.style.left = "1500px";
     // back slide
     decreametNumber();
     // update progress bar
@@ -158,7 +158,7 @@ function backOne() {
 }
 //============ Second Form=============
 function nextTwo() {
-    form2.style.left = "-450px";
+    form2.style.left = "-1500px";
     form3.style.left = "25px";
     //next slide
     increamentNumber();
@@ -168,7 +168,7 @@ function nextTwo() {
 //=============== Back One==================
 function backTwo() {
     form2.style.left = "25px";
-    form3.style.left = "450px";
+    form3.style.left = "1500px";
     // back slide
     decreametNumber();
     // update progress bar
