@@ -22,3 +22,11 @@ function blurring() {
 const scale = (num, in_min, in_max, out_min, out_max) => {
     return ((num - in_min) * (out_max - out_min)) / (in_max - in_min) + out_min
 }
+
+// kontakt info
+
+$('button').click(function () {
+    $('button').toggleClass('active');
+    $('.title').toggleClass('active');
+    $('nav').toggleClass('active');
+});
