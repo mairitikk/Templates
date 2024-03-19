@@ -1,5 +1,5 @@
 /*rotatng nav bar*/
-@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
 
 
 
@@ -8,8 +8,8 @@
 }
 
 body {
-    background-color: #f6f7fb;
-    font-family: 'Lato', sans-serif;
+    
+    font-family: 'Roboto', sans-serif;
     background-color: #333;
     color: #222;
     overflow-x: hidden;
@@ -17,7 +17,7 @@ body {
 }
 
 .container {
-    background-color: #fafafa;
+    background-color: rgb(183, 231, 240);
     transform: rotate(0deg);
     transform-origin: top left;
     transition: transform 0.5s linear;
@@ -29,17 +29,25 @@ body {
 
 /*registreerimis vorm*/
 
+.form-header{
+    color: rgb(70, 89, 105);;
+}
+
 form button {
-    width: 110px;
-    height: 35px;
+    text-decoration: none;
+   padding: 10px;
     margin: 0 10px;
-    background-color: #3498db;
+    background-color: rgb(107, 176, 189);
+    color: rgb(70, 89, 105);
     border: none;
     outline: none;
     cursor: pointer;
-    font-size: 0.9rem;
-    font-family: inherit;
-    border-radius: 5px;
+    font-size: 18px;
+    font-family: 'Roboto', sans-serif;
+    line-height: 25px;
+    
+    border-radius: 4px;
+    
 }
 .contact-container{
     height: 80vh;
@@ -90,7 +98,7 @@ form button {
 }
 
 .circle {
-    background-color: #ff7979;
+    background-color: rgb(107, 176, 189);;
     height: 200px;
     width: 200px;
     border-radius: 50%;
@@ -111,7 +119,7 @@ form button {
     background: transparent;
     border: 0;
     font-size: 26px;
-    color: #fff;
+    color: rgb(70, 89, 105);
 }
 
 .circle button:focus {
@@ -148,7 +156,7 @@ nav ul {
 
 nav ul li {
     text-transform: uppercase;
-    color: #fff;
+    color: rgb(183, 231, 240);
     margin: 40px 0;
     transform: translateX(-100%);
     transition: transform 0.4s ease-in;
@@ -170,14 +178,14 @@ nav ul li+li+li {
 }
 a:link{
     text-decoration: none;
-    color: #fff;
+    color: rgb(183, 231, 240);
 }
 a:visited{
     text-decoration: none;
-    color: #fff;
+    color: rgb(183, 231, 240);
 }
 a:hover{
-    color: #ff7979;
+    color: #1da1f2;
 
 }
 .content img {

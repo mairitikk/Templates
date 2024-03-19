@@ -25,7 +25,7 @@ body {
 
 .header a {
     float: left;
-    color: black;
+    color: rgb(70, 89, 105);
     text-align: center;
     padding: 12px;
     text-decoration: none;
@@ -47,7 +47,7 @@ body {
 }
 
 .header a.active {
-    background-color: dodgerblue;
+    background-color: rgb(107, 176, 189);
     color: white;
 }
 
@@ -104,4 +104,8 @@ body {
     .panel:nth-last-of-type(5) {
         display: none;
     }
+}
+
+h3{
+    color: rgb(225, 229, 231);;
 }

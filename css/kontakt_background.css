@@ -14,7 +14,7 @@ body {
 
 .header a {
     float: left;
-    color: black;
+    color: rgb(70, 89, 105);
     text-align: center;
     padding: 12px;
     text-decoration: none;
@@ -36,7 +36,7 @@ body {
 }
 
 .header a.active {
-    background-color: dodgerblue;
+    background-color: rgb(107, 176, 189);
     color: white;
 }
 
