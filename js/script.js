@@ -1,12 +1,4 @@
-//nav bar 
-fetch('nav.html')
-    .then(res => res.text())
-    .then(text => {
-        let oldelem = document.querySelector("script#replace_with_navbar");
-        let newelem = document.createElement("div");
-        newelem.innerHTML = text;
-        oldelem.parentNode.replaceChild(newelem, oldelem);
-    })
+
 
 
 // otsimis nupu js
@@ -85,4 +77,9 @@ const countDownClock = (number = 100, format = 'seconds') => {
   enter number and format
   days, hours, minutes or seconds
 */
-countDownClock(422, 'days');
+var fecha1 = moment(new Date());
+var fecha2 = moment('2025-04-08');
+let calculo = fecha2.diff(fecha1, 'days')
+console.log(fecha2.diff(fecha1, 'days'), ' dias de diferencia');
+
+countDownClock(calculo, 'days');
