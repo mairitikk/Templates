@@ -101,7 +101,7 @@ body {
     display: none;
 }
 
-@media (max-width: 425px) {
+@media (max-width: 739px) {
 
    
 
@@ -117,7 +117,60 @@ body {
         height: 40px;
         z-index: 100;
         
-       
+    }
+
+    .fas.fa-bars.fa-2x {
+        color: rgb(70, 89, 105);
+    }
+    .navbar{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+
+    }
+    .header-links{
+            display: block;
+            
+        }
+
+    .header-link-a {
+        color: white;
+        padding: 14px 16px;
+        text-decoration: none;
+        font-size: 17px;
+        display: block;
+        position: relative;
+        
+    }
+
+  .logo {
+      position: relative;
+      display: block;
+      align-items: flex-start;
+
+  }
+  #myLinks{
+    display: none;
+  }
+        
+}
+
+
+@media (max-width: 425px) {
+
+    .nav-hamburger {
+
+        display: block;
+        align-items: center;
+        position: absolute;
+        right: 5px;
+        top: 20px;
+        cursor: pointer;
+        width: 50px;
+        height: 40px;
+        z-index: 100;
+
+
 
     }
 
