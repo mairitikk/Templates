@@ -218,7 +218,7 @@ display: none;
     
 }
 .countdown-header{
-    font-size: 20px;
+    font-size: 30px;
 }
 .heart-icon{
    font-size: 30px;
@@ -303,11 +303,6 @@ display: none;
 
 .countdown-container{
     top: 180%;
-
-   
-    
-        
-   
 
 }
 
@@ -622,9 +617,9 @@ display: none;
 .maagia-container{
    color: rgb(70, 89, 105);;
     width: 100%;
-    height: 500px;
+    height: 400px;
     position: absolute;
-    top:190%;
+    top:210%;
     display: flex;
     flex-direction: column;
     justify-content: center;
