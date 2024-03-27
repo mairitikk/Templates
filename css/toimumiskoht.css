@@ -114,6 +114,15 @@ body {
 }
 @media (max-width: 739px) {
 
+.panel{
+    display: none;
+}
+#cartagena-photo{
+    display: block;
+}
+
+
+
 
 
     .nav-hamburger {
