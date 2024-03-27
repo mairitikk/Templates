@@ -20,11 +20,19 @@ body::-webkit-scrollbar-track{
     background: rgb(133, 208, 221);
 }
 
-
+.main-container{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+@media (max-width: 768px) {
+    .main-container {
+        flex-direction: column;
+    }
+}
 /*navbar*/
 .navbar{
    display: flex;
-    
  background-color: rgb(133, 208, 221);
     padding: 20px 10px;
     align-items: center;
@@ -137,7 +145,7 @@ body::-webkit-scrollbar-track{
 .nav-hamburger{
     display: none;
 }
-@media (max-width: 425px) {
+@media (max-width: 739px) {
 
 .search{
     display: none;
@@ -153,12 +161,24 @@ body::-webkit-scrollbar-track{
     width: 50px;
     height: 40px;
     z-index: 100;
-    color: #fff;
+  
 
 }
 
 .fas.fa-bars.fa-2x{
     color: rgb(70, 89, 105);
+}
+
+.navbar {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+
+}
+
+.header-links {
+    display: block;
+
 }
 
 .header-link-a{
@@ -177,8 +197,13 @@ display: none;
 
 .logo{
     position: relative;
-    top: 10px;
+    display: block;
+        align-items: flex-start;
 }
+
+
+
+
 }
 /*main cpntainer photo*/
 .maind-photo{
@@ -192,12 +217,34 @@ display: none;
 .photo-section{
     display: flex;
    justify-content: center;
-    position: relative;
+    
     top: 20px;
     height: 70vh;
     width: 98vw;
     position: relative;
     
+}
+
+@media (max-width: 739px){
+    .maind-photo {
+            object-fit: cover;
+            height: 100%;
+            width: 100%;
+            object-position: 50% 50%;
+            border-radius: 30px;
+    
+        }
+    
+        .photo-section {
+            display: flex;
+            justify-content: center;
+            position: relative;
+            top: 20px;
+            height: 70vh;
+            width: 98vw;
+
+    
+        }
 }
 
 /* time counter*/
@@ -222,18 +269,34 @@ display: none;
 }
 .heart-icon{
    font-size: 30px;
+   display: flex;
+   flex-direction: column;
+   flex-wrap: wrap;
+   
     
 }
 .countdown-header-container{
     display: flex;
-    color: rgb(70, 89, 105);;
-        flex-direction: column;
+    flex-direction: column;
+    color: rgb(70, 89, 105);
+        flex-wrap: wrap;
         align-items: center;
         justify-content: center;
         position: absolute;
         top: 5%;
         left: 45%;
 
+}
+@media (max-width: 739px){
+    .countdown-header-container {
+            left: 30%;
+            
+    }
+    .countdown-header,.heart-icon{
+        margin: 0%;
+        font-size: 20px;
+    }
+  
 }
 .days-container,
 .hours-container,
@@ -301,10 +364,6 @@ display: none;
     
         }
 
-.countdown-container{
-    top: 180%;
-
-}
 
 }
 
@@ -613,14 +672,14 @@ display: none;
 }
 
 
-
+/*maagia sectsion */
 .maagia-container{
    color: rgb(70, 89, 105);;
+    display: flex;
     width: 100%;
     height: 400px;
     position: absolute;
     top:210%;
-    display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -646,14 +705,6 @@ display: none;
     
 }
 
-@media only screen and (max-width: 1200px) {
-    .image-container {
-        flex-direction: column
-    }
-    .maagia-container{
-        top: 100%;
-    }
-}
 
 /*photo wavy*/
 
