@@ -226,15 +226,6 @@ display: none;
 }
 
 @media (max-width: 739px){
-    .maind-photo {
-            object-fit: cover;
-            height: 100%;
-            width: 100%;
-            object-position: 50% 50%;
-            border-radius: 30px;
-    
-        }
-    
         .photo-section {
             display: flex;
             justify-content: center;
@@ -243,6 +234,14 @@ display: none;
             height: 70vh;
             width: 98vw;
 
+    
+        }
+        .maind-photo {
+            object-fit: cover;
+            height: 100%;
+            width: 100%;
+            object-position: 50% 50%;
+            border-radius: 30px;
     
         }
 }
@@ -270,7 +269,17 @@ display: none;
 @media (max-width: 1500px) {
     .countdown-container {
         align-items: center;
+        
         top: 100%;
+    }
+}
+
+@media (max-width: 739px) {
+    .countdown-container {
+        display: flex;
+        align-items: center;
+        top: 100%;
+        padding: 0;
     }
 }
 .countdown-header{
@@ -294,30 +303,24 @@ display: none;
     align-items: center;
     justify-content: center;
 
-    /* Centering using both transform and margin: auto */
+    
     position: absolute;
     top: 10%;
     left: 50%;
     transform: translate(-50%, -50%);
-    /* Offset for centering */
+    
     margin: 0 auto;
 }
-@media (max-width: 739px){
+@media (max-width: 739px) {
     .countdown-header-container {
-            left: 30%;
-            
+        width: 100%;
     }
-    .countdown-header,.heart-icon{
-        margin: 0%;
-        font-size: 20px;
-    }
-  
 }
 .numbrite-loendur {
     display: flex;
     flex-direction: row;
     align-items: center;
-    flex-wrap: wrap;
+    
     justify-content: center;
     position: absolute;
     top: 35%;
@@ -330,6 +333,16 @@ display: none;
     .numbrite-loendur {
         align-items: center;
         top: 45%;
+    }
+}
+
+@media (max-width: 739px) {
+    .numbrite-loendur {
+        flex-wrap: nowrap;
+        font-size: 10px;
+        width: 100%;
+        justify-content: center;
+        margin-left: 15px;
     }
 }
 .days-container,
@@ -412,6 +425,13 @@ display: none;
     position: absolute;
     top: 45%;
 
+}
+
+@media (max-width: 1500px) {
+    .button-container {
+        
+        top: 50%;
+    }
 }
 
 @media (max-width: 739px){
@@ -726,6 +746,13 @@ display: none;
     align-items: center;
 }
 
+@media (max-width: 1500px) {
+    .maagia-container {
+
+        top: 175%;
+    }
+}
+
 
 .maagia-container-header-name{
     font-size: 2em;
@@ -740,11 +767,17 @@ display: none;
 
 .mustkuntsnikud{
     
-    width: 400px;
+    width: 450px;
     
     object-fit: contain;
     border-radius: 30px;
     
+}
+@media (max-width: 739px) {
+    .mustkuntsnikud {
+
+        width: 300px;
+    }
 }
 
 
