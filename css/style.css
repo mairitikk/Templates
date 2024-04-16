@@ -274,6 +274,7 @@ display: none;
     }
 }
 
+
 @media (max-width: 739px) {
     .countdown-container {
         display: flex;
